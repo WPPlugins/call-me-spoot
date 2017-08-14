@@ -1,0 +1,264 @@
+/* Menu table */
+.spwp86_setting_table{
+	width: 100%;
+}
+
+.tabs {
+	min-width: 320px;
+	padding: 0px;
+	margin: 0 auto; 
+}
+
+.tabs input[type="text"]{
+	max-width: 200px;
+}
+
+.tabs input[type="number"]{
+	max-width: 100px;
+}
+
+.tabs input[type="color"]{
+	max-width: 50px;
+}
+
+section {
+	display: none;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+section p{
+	margin-left: 5px;
+}
+
+.tabs input[type=radio] { display: none; } 
+
+.tabs label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	border-radius: 3px 3px 0 0;
+}
+
+.tabs label:before {
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
+}
+
+.tabs label:hover {
+	color: #888;
+	cursor: pointer;
+}
+
+.tabs input:checked + label {
+	color: #555;
+	border: 1px solid #ddd;
+	border-top: 1px solid #009933;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+.spwp86_setting_table p{
+	margin-left:20px;
+}
+
+.spwp86_setting_menu{
+	font-size: 16px;
+	line-height: 1.3;
+	cursor: pointer;
+}
+
+.spwp86_table_form_field_name{
+	display: none;
+}
+.spwp86_table_form_field_email{
+	display: none;
+}
+.spwp86_table_form_field_phone{
+	display: none;
+}
+.spwp86_table_form_field_message{
+	display: none;
+}
+
+.spwp86_table_form_title{
+	display: none;
+}
+.spwp86_table_form_captha{
+	display: none;
+}
+.spwp86_table_form_button{
+	display: none;
+}
+
+.spwp86_table_form_styles{
+	display: none;
+}
+.spwp86_table_form_heading_styles{
+	display: none;
+}
+.spwp86_table_form_label_styles{
+	display: none;
+}
+.spwp86_table_form_input_styles{
+	display: none;
+}
+.spwp86_table_form_submit_styles{
+	display: none;
+}
+
+.spwp86_table_form_notification{
+	display: none;
+}
+.spwp86_table_form_notification_telegram{
+	display: none;
+}
+
+.spwp86_table_form_success_text{
+	display: none;
+}
+
+/* Checkbox */
+.checkbox {
+	vertical-align: top;
+	margin: 0 3px 0 0;
+	width: 17px;
+	height: 17px;
+}
+
+.checkbox + label {
+	cursor: pointer;
+}
+
+.checkbox:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+.checkbox:not(checked) + label {
+	position: relative;
+	padding: 0 0 0 60px;
+}
+
+.checkbox:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 50px;
+	height: 26px;
+	border-radius: 13px;
+	background: #CDD1DA;
+}
+
+.checkbox:not(checked) + label:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 2px;
+	width: 22px;
+	height: 22px;
+	border-radius: 10px;
+	background: #FFF;
+	transition: all .2s; 
+}
+
+.checkbox:checked + label:before {
+	background: #0073aa;
+}
+
+.checkbox:checked + label:after {
+	left: 26px;
+}
+
+/* Dashicons */
+dashicons-info #spoot-button-icon {
+	margin: 11px 10px!important;
+	font-size: 45px!important; 
+}
+
+.dashicons-editor-help{
+	font-size: 45px!important; 
+	margin: 11px 10px!important;
+}
+
+.dashicons-phone{
+	font-size: 44px!important; 
+	margin: 11px 11px!important; 
+}
+
+/* firefox icons */
+@-moz-document url-prefix(){
+
+	.spoot-button .dashicons-editor-help {
+		font-size: 44px !important;
+    }
+    
+    .spoot-button .dashicons-info {
+		margin: 10px 10px !important;
+	}	
+		
+	.spoot-button .dashicons-email {
+		font-size: 45px !important;
+		margin: 11px 9px !important;
+	}
+	
+	.spoot-button .dashicons-email-alt {
+		font-size: 45px !important;
+		margin: 11px 9px !important;
+	}
+}
+
+/* Mobile */
+@media screen and (min-width:480px) and (max-width:800px) {
+	.tabs input[type="text"]{
+		max-width: 150px;
+	}
+
+	.spwp86_contact_form{
+		max-width: 300px;
+	}
+	
+	#spoot-button-icon {
+		font-size: 27px!important;
+		margin: 8px 7px!important;
+	}
+	
+	.spoot-button .spoot_open_window .dashicons-phone{
+		font-size: 27px!important;
+		margin: 8px 7px!important;
+	}
+}
+
+@media screen and (min-width:320px) and (max-width:800px){
+	.tabs input[type="text"]{
+		max-width: 150px;
+	}
+	
+	.spwp86_contact_form{
+		max-width: 300px;
+	}
+	
+	#spoot-button-icon {
+		font-size: 27px!important;
+		margin: 8px 7px!important;
+	}
+	
+	.spoot-button .spoot_open_window .dashicons-phone{
+		font-size: 27px!important;
+		margin: 8px 7px!important;
+	}
+}
